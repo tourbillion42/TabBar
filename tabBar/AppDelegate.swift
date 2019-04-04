@@ -15,7 +15,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        if let tbC = self.window?.rootViewController as? UITabBarController {
+            
+            if let tbItems = tbC.tabBar.items {
+                
+                tbItems[0].image = UIImage(named: "calendar")
+                tbItems[1].image = UIImage(named: "file-tree")
+                tbItems[2].image = UIImage(named: "photo")
+                
+                tbItems[0].title = "calender"
+                tbItems[1].title = "file"
+                tbItems[2].title = "photo"
+            }
+        }
+        
         return true
     }
 
