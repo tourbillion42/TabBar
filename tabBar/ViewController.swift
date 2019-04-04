@@ -12,9 +12,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let title = UILabel(frame: CGRect(x: 0, y: 100, width: 100, height: 30))
+        
+        title.text = "first View"
+        title.textColor = UIColor.blue
+        title.textAlignment = .center
+        title.font = UIFont.boldSystemFont(ofSize: 20)
+        title.sizeToFit()
+        title.center.x = self.view.frame.width / 2
+        
+        self.view.addSubview(title)
     }
-
-
 }
 
