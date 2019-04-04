@@ -36,7 +36,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     let image = UIImage(named: "checkmark")?.withRenderingMode(.alwaysOriginal)
                     
                     tbItem.selectedImage = image
+                    
+                    tbItem.setTitleTextAttributes([NSAttributedString.Key(rawValue: NSAttributedString.Key.foregroundColor.rawValue) : UIColor.red], for: .selected)
+                    
+                    tbItem.setTitleTextAttributes([NSAttributedString.Key(rawValue: NSAttributedString.Key.font.rawValue) : UIFont.systemFont(ofSize: 15)], for: .normal)
+                    
                 }
+                
+                tbItems[0].title = "calendar"
+                tbItems[1].title = "file"
+                tbItems[2].title = "photo"
             }
         }
         
