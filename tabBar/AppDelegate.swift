@@ -20,13 +20,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             if let tbItems = tbC.tabBar.items {
                 
-                tbItems[0].image = UIImage(named: "calendar")
-                tbItems[1].image = UIImage(named: "file-tree")
-                tbItems[2].image = UIImage(named: "photo")
+//                tbItems[0].image = UIImage(named: "calendar")
+//                tbItems[1].image = UIImage(named: "file-tree")
+//                tbItems[2].image = UIImage(named: "photo")
+//
+//                tbItems[0].title = "calender"
+//                tbItems[1].title = "file"
+//                tbItems[2].title = "photo"
                 
-                tbItems[0].title = "calender"
-                tbItems[1].title = "file"
-                tbItems[2].title = "photo"
+                tbItems[0].image = UIImage(named: "designbump")?.withRenderingMode(.alwaysOriginal)
+                tbItems[1].image = UIImage(named: "rss")?.withRenderingMode(.alwaysOriginal)
+                tbItems[2].image = UIImage(named: "facebook")?.withRenderingMode(.alwaysOriginal)
+                
+                for tbItem in tbItems {
+                    let image = UIImage(named: "checkmark")?.withRenderingMode(.alwaysOriginal)
+                    
+                    tbItem.selectedImage = image
+                }
             }
         }
         

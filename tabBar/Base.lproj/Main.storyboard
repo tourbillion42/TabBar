@@ -29,7 +29,7 @@
         <!--Item-->
         <scene sceneID="5SH-gs-t1x">
             <objects>
-                <viewController id="c4s-WP-6BB" sceneMemberID="viewController">
+                <viewController id="c4s-WP-6BB" customClass="SecondViewController" customModule="tabBar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B13-Zw-0Zz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,7 +45,7 @@
         <!--Item-->
         <scene sceneID="sZq-My-c8a">
             <objects>
-                <viewController id="xpg-ma-um0" sceneMemberID="viewController">
+                <viewController id="xpg-ma-um0" customClass="ThirdViewController" customModule="tabBar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N9H-EE-tMd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
